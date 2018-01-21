@@ -1,2 +1,4 @@
-# tcc-ufpel
-Scripts that were developed and found on the internet to develop my conclusion work
+# Trabalho de Conclusão de Curso - UFPel 2017
+# Autor: Victor Renan Covalski Junes
+
+Neste repositório encontram-se os scripts utilizados durante a prototipação do meu trabalho de conclusão de curso.

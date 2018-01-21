@@ -1,3 +1,4 @@
+#!/home/victor/anaconda3/bin/python3
 ############################
 # @author Victor Covalski  #
 # @date 12/11/2017         #
@@ -83,7 +84,10 @@ def main( arguments ):
         extracted_features['no_links'] = len(url_list) #1.7
         extracted_features['no_link_dn'] = get_distinct_domain(url_list)
         extracted_features['from_dif_dn'] = check_from_dn(email['from'],url_list) #1.9
+
         #1.10
+        if extracted_features['html_email']:
+            email_body = email_html.text
         extracted_features['update_confirm'] = check_keywords(['update','confirm'],email_body)
         extracted_features['user_cust_clie'] = check_keywords(['user','customer','client'],email_body)
         extracted_features['susp_rest_hold'] = check_keywords(['suspend','restrict','hold'],email_body)
